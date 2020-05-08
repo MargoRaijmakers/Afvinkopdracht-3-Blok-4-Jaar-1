@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Afvinkopdracht 3</title>
+    <meta name="Margo Raijmakers" content="Afvinkopdracht 3 HTML" charset="UTF-8">
+</head>
+<body>
+    <form method="post">
+        <p>
+            Geef een zoekwoord op:
+            <input type="text" name="filter"> <input type="submit">
+        </p>
+        <hr>
+        <p>
+            {% for line in data %}
+                {{ line }} <br>
+            {% endfor %}
+        </p>
+
+    </form>
+</body>
+</html>
